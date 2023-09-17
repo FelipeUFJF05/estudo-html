@@ -9,7 +9,7 @@
     <main>
         <section>
             <h1>Esse site será usado para testes e treino em <a href="https://pt.wikipedia.org/wiki/HTML">HTML</a>, <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> e <a href="https://pt.wikipedia.org/wiki/JavaScript">JavaScript</a></h1>
-            <p>Para a disciplina de <a href="https://classroom.google.com/u/2/c/NjE1NzY4MzYxMjU0?hl=pt-BR">Desenvolvimento Web</a>, cursada no primeiro semestre de Ciência da Computação na <a href="https://www2.ufjf.br/ufjf/">UFJF</a>, esse site será usado com o intuito de treino e para a aplicação de técnicas aprendidas previamente durante as aulas no laboratório.</p>
+            <p>Para a disciplina de <a href="https://classroom.google.com/u/2/c/NjE1NzY4MzYxMjU0?hl=pt-BR">Desenvolvimento Web</a>, cursada no primeiro semestre de <strong>Ciência da Computação</strong> na <a href="https://www2.ufjf.br/ufjf/">UFJF</a>, esse site será usado com o <mark>intuito de treino e para a aplicação de técnicas aprendidas previamente durante as aulas no laboratório</mark>.</p>
         </section>
         <section>
             <h2>Listas</h2>
@@ -17,15 +17,15 @@
                     <h4>Lista associativa do Mercado:</h4>
             <dl>
                 <div>
-                    <dt>Pães</dt>
+                    <dt>Pães:</dt>
                     <dd>Brioche, Frencês, Tatu, Baguette. Evitar pães com muito glúten.</dd>
                 </div>
                 <div>
-                    <dt>Sucos</dt>
+                    <dt>Sucos:</dt>
                     <dd>Maracujá, Pêssego, Laranja e Uva.</dd>
                 </div>
                 <div>
-                    <dt>Itens Diversos</dt>
+                    <dt>Itens Diversos:</dt>
                     <dd>Arroz, Feijão, Farofa, Carnes de boi e frango.</dd>
                 </div>
             </dl>
@@ -53,8 +53,64 @@
             <!--o elemento start pode receber um numero inteiro para representar a ordem do primeiro elemento. Ex: <ol start="5" >-->
             <!--o elemento type especifica o símbolo de ordenação. Só deve ser usado quando o conteúdo pede uma simbologia específica. Ex: 1, a, A, i, I, ...-->
             <!--o elemento value declara q os elementos podem ter uma posição associada, a contagem permanece normal a partir deste valor. Ex: <li value="10">Terceiro</li> -->
-            
+
         </section>
+        <section>
+            <h2>Tabelas</h2>
+                <h3>Testes sobre tabelas:</h3>
+                    <h4>Teste 1:</h4>
+            <div>
+                <table>
+                    <tr> <th>Medida</th> <th>Mililitros</th> <th>Farinha</th> </tr>
+                    <tr> <td>1 xícara</td> <td>240 ml</td> <td>160g</td> </tr>
+                    <tr> <td>1 copo americano</td> <td>250ml</td> <td>167g</td> </tr>
+                    <tr> <td> 1 colher de sopa</td> <td>15ml</td> <td>10g</td> </tr>
+                </table>
+            </div>
+                    
+                    <h4>Teste 2:</h4>
+            <div>
+                <table>
+                    <caption>Essa é uma tabela de conversão de medidas.</caption>
+                    <thead>
+                        <tr>
+                            <th>Medida</th>
+                            <th>Mililitros</th>
+                            <th>Farinha</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Custo total da receita: R$12,00</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>1 xícara</td>
+                            <td>240ml</td>
+                            <td>160g</td>
+                        </tr>
+                        <tr>
+                            <td>1 copo americano</td>
+                            <td>250ml</td>
+                            <td>167g</td>
+                        </tr>    
+                    </tbody>                                                     
+                </table>
+            </div>
+            <!--Com identação ou sem identação, o resultado é o mesmo para as tabelas.-->
+            <!--A tag <th> serve para marcar uma cédula como título para um grupo de dados.-->
+            <!--A tag <td> divide os dados das linhas em colunas.-->
+            <!--A tag <tr> divide os dados em linhas.-->
+            <!--O grupo de dados é especificado pelo atributo "scope". EX: <th scope="col">Medida</th>-->
+            <!--Atributos "rowspan" e "colspan" forçam uma célula a se mesclar com as vizinhas. (Mesclar à direita: colspan="n+1"; Mesclar abaixo: rowspan="n+1").-->
+            <!--A tag <caption> adiciona título ou legenda para a tabela. Deve ser o primeiro filho do elemento <table>.-->
+            <!--A tag <thead> define um cabeçalho para a tabela. Deve vir após o <caption>.-->
+            <!--A tag <tfoot> define um rodapé para a tabela, independente de onde estiver, vai acrescentar a linha por último na tabela.-->
+            <!--A tag <tbody> define um corpo de dados da tabela. Descreve onde a está a "massa" de dados principais da tabela.-->
+
+        </section>
+
     </main>
     
 </body>
